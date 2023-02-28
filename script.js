@@ -11,11 +11,18 @@ for(var i = 0; i < buttons.length; i++){
         var value = this.getAttribute('data-value');
         var input = display.textContent.trim();
         if(operatorin(value)){
+            operator = value;
             operand1 = parseFloat(input);
             display.textContent = '';
-            operator = value; 
         } else if(value == '='){
             operand2 = parseFloat(input);
+            var result = eval(operand1 + ' ' + operator + ' ' + operand2);
+            if (result) {
+                display.textContent = result;
+                operand1 = result;
+                operand2 = null;
+                operator = null;
+            }
         } else if(value == 'AC'){
             display.innerText = ''  
         } else if(value == '.'){
