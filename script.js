@@ -3,8 +3,9 @@ var display = document.getElementById("display");
 var operand1 = 0;
 var operand2 = null;
 var operator = null;
-function operatorin(){
-
+function operatorin(value){
+    return value == "+" || value == "-" || value == "*" || value == "/";
+}
 }
 for(var i = 0; i < buttons.length; i++){
     buttons[i].addEventListener('click', function (){
