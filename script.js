@@ -6,7 +6,6 @@ var operator = null;
 function operatorin(value){
     return value == "+" || value == "-" || value == "*" || value == "/";
 }
-}
 for(var i = 0; i < buttons.length; i++){
     buttons[i].addEventListener('click', function (){
         var value = this.getAttribute('data-value');
