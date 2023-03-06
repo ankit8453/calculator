@@ -1,6 +1,6 @@
 {
     "name":"Simple Calculator",
-    "short_name":"ASC",
+    "short_name":"calci",
     "start_url":"index.html",
     "display":"standalone",
     "background_color":"#5900b3",
