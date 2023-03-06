@@ -57,7 +57,7 @@
 .btn:hover{
     background-color: rgb(247, 153, 53);
 }
-@media (max-width:600px) {
+@media (max-width:980px) {
     #outerdiv{
         background-color: #fff;
     }
