@@ -3,6 +3,7 @@ var display = document.getElementById("display");
 var operand1 = 0;
 var operand2 = null;
 var operator = null;
+var op = null;
 function operatorin(value){
     return value == "+" || value == "-" || value == "*" || value == "/";
 }
@@ -13,7 +14,8 @@ for(var i = 0; i < buttons.length; i++){
         if(operatorin(value)){
             operator = value;
             operand1 = parseFloat(input);
-            display.textContent = '';
+            op = input + value;
+            display.textContent = op;
         } else if(value == '='){
             operand2 = parseFloat(input);
             var result = eval(operand1 + ' ' + operator + ' ' + operand2);
