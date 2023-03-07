@@ -1,6 +1,6 @@
 {
     "name":"Simple Calculator",
-    "short_name":"calci",
+    "short_name":"Calculator",
     "start_url":"index.html",
     "display":"standalone",
     "background_color":"#5900b3",
